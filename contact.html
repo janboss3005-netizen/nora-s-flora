@@ -6,35 +6,54 @@
     <title>Contact | Nora's Flora</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
+<body class="contactpagina">
+    <header class="site-header">
+        <a class="logo-link" href="index.html" aria-label="Nora's Flora - Home">
+            <img src="Nora'sFloraLogo.png" alt="Nora's Flora">
+        </a>
         <nav class="navigatie" aria-label="Hoofdnavigatie">
             <a href="index.html">Home</a>
             <a href="assortiment.html">Assortiment</a>
-            <a class="actief" href="contact.html">Contact</a>
+            <a class="actief" href="contact.html" aria-current="page">Contact</a>
         </nav>
     </header>
 
-    <main>
+    <main class="contact-main">
         <h1>Neem contact op</h1>
-        <p>Neem contact met ons op voor vragen over onze bloemen en planten.</p>
-        <p>Heb je een vraag over over onze bloemen, een bestelling of
-            wil je gewoon even hallo zeggen? We horen graag van je! Vul het contactformulier in of stuur ons een berichtje
-            via e-mail of telefoon. Nora's flora staat klaar om je te helpen met al je bloemige wensen.🌸
-        </p>
-        <p>E-mail :contact@noraflora.com</p>
-        <p>Telefoon : 06 12345678</p>
-        <p>Adres :Zwolle,pannekoeken 420 B</p>
+        <div class="contact-layout">
+            <section class="contact-copy" aria-label="Contactgegevens">
+                <p class="contact-intro">Neem contact met ons op voor vragen over onze bloemen en planten.</p>
+                <p class="contact-intro">Heb je een vraag over over onze bloemen, een bestelling of wil je gewoon even hallo zeggen? We horen graag van je! Vul het contactformulier in of stuur ons een berichtje via e-mail of telefoon. Nora's flora staat klaar om je te helpen met al je bloemige wensen.🌸</p>
+                <address class="contact-details">
+                    <p><span>E-mail</span><span>contact@noraflora.com</span></p>
+                    <p><span>Telefoon</span><span>06 12345678</span></p>
+                    <p><span>Adres</span><span>Zwolle,pannekoeken 420 B</span></p>
+                </address>
+            </section>
 
-<footer>
-        <P>E-mail :contact@noraflora.com</P>
-        <p>Telefoon : 06 12345678</p>
-        <p>Adres :Zwolle,pannekoeken 420 B</p>
-        <h2>Openingtijden</h2>
-        <p>ma - vr 12:00 - 17:00</p>
-        <p>Zaterdag : 10:00 - 17:00</p>
-        </footer>
-    
+            <form class="contact-form" action="#" method="post">
+                <label class="visually-hidden" for="bericht">Je vraag of opmerking</label>
+                <textarea id="bericht" name="bericht" placeholder="Typ hier je vraag of opmerking..." required></textarea>
+                <label class="visually-hidden" for="email">Je e-mailadres</label>
+                <input id="email" name="email" type="email" placeholder="Typ hier je e-mailadres..." required>
+                <button type="submit">Verzenden</button>
+            </form>
+        </div>
     </main>
+
+    <footer class="contact-footer">
+        <div class="footer-layout">
+            <address class="footer-details">
+                <p><span>E-mail</span><span>contact@noraflora.com</span></p>
+                <p><span>Telefoon</span><span>06 12345678</span></p>
+                <p><span>Adres</span><span>Zwolle,pannekoeken 420 B</span></p>
+            </address>
+            <section class="openingstijden">
+                <h2>Openingtijden</h2>
+                <p>ma - vr 12:00 - 17:00</p>
+                <p>Zaterdag : 10:00 - 17:00</p>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>

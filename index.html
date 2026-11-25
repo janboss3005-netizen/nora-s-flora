@@ -6,10 +6,13 @@
     <title>Home | Nora's Flora</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
+<body class="site-page">
+    <header class="site-header">
+        <a class="logo-link" href="index.html" aria-label="Nora's Flora - Home">
+            <img src="Nora'sFloraLogo.png" alt="Nora's Flora">
+        </a>
         <nav class="navigatie" aria-label="Hoofdnavigatie">
-            <a class="actief" href="index.html">Home</a>
+            <a class="actief" href="index.html" aria-current="page">Home</a>
             <a href="assortiment.html">Assortiment</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -19,5 +22,20 @@
         <h1></h1>
         <p></p>
     </main>
+
+    <footer class="contact-footer">
+        <div class="footer-layout">
+            <address class="footer-details">
+                <p><span>E-mail</span><span>contact@noraflora.com</span></p>
+                <p><span>Telefoon</span><span>06 12345678</span></p>
+                <p><span>Adres</span><span>Zwolle,pannekoeken 420 B</span></p>
+            </address>
+            <section class="openingstijden">
+                <h2>Openingtijden</h2>
+                <p>ma - vr 12:00 - 17:00</p>
+                <p>Zaterdag : 10:00 - 17:00</p>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
