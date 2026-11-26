@@ -43,6 +43,11 @@ body {
     flex: 1;
 }
 
+.site-page .contact-footer {
+    margin: 0;
+    border-top: 0;
+}
+
 .site-header {
     background: var(--flora-green);
 }
