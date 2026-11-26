@@ -22,6 +22,16 @@
     box-sizing: border-box;
 }
 
+.site-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-page main {
+    flex: 1;
+}
+
 .site-header {
     background: var(--flora-green);
 }
