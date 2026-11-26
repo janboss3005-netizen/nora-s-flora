@@ -6,6 +6,18 @@ nav a {
 
 body {
   background-color: #f3efe0;
+.titel {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 400px;
+}
+
+
+
+
 }
 
 
@@ -193,7 +205,7 @@ body {
     min-height: 62px;
     border: 0;
     border-radius: 999px;
-    background: var(--flora-light-green);
+    background: var(--flora-light-green); 
     color: #111;
     font: inherit;
     font-size: 25px;
@@ -214,7 +226,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.footer-layout {
+.footer-layout { 
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
