@@ -1,4 +1,15 @@
 
+
+nav a {
+    color: #a52a2a;
+}
+
+body {
+  background-color: #f3efe0;
+}
+
+
+
 :root {
     color-scheme: light;
     --flora-green: #3e5b3e;
