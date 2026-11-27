@@ -1,15 +1,16 @@
 
-
+/* Linkkleur voor de navigatie. */
 nav a {
     color: #a52a2a;
 }
 
+/* Achtergrondkleur van de pagina. */
 body {
   background-color: #e0f3e5;
 }
 
 
-
+/* Kleurenpalet dat overal op de website wordt gebruikt. */
 :root {
     color-scheme: light;
     --flora-green: #3e5b3e;
@@ -19,6 +20,7 @@ body {
     --flora-white: #fff;
 }
 
+/* Basisinstellingen voor de pagina en alle inhoud. */
 .contactpagina,
 .site-page {
     min-width: 320px;
@@ -28,30 +30,36 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Maakt alle elementen de breedte- en hoogteberekening voorspelbaar. */
 .contactpagina *,
 .site-page * {
     box-sizing: border-box;
 }
 
+/* Zorgt dat de indexpagina minimaal de volledige schermhoogte vult. */
 .site-page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* Laat de hoofdinhoud groeien, zodat de footer onderaan blijft staan. */
 .site-page main {
     flex: 1;
 }
 
+/* Verwijdert witruimte rond de footer op index-achtige pagina's. */
 .site-page .contact-footer {
     margin: 0;
     border-top: 0;
 }
 
+/* Achtergrondkleur van de bovenste header. */
 .site-header {
     background: var(--flora-green);
 }
 
+/* Middenstelt het logo in de header. */
 .logo-link {
     display: flex;
     justify-content: center;
@@ -60,6 +68,7 @@ body {
     padding: 14px;
 }
 
+/* Beperkt de grootte van het logo. */
 .logo-link img {
     display: block;
     width: 215px;
@@ -67,6 +76,7 @@ body {
     object-fit: contain;
 }
 
+/* Vormt de navigatiebalk onder het logo. */
 .site-header .navigatie {
     display: flex;
     justify-content: center;
@@ -75,6 +85,7 @@ body {
     background: var(--flora-dark-green);
 }
 
+/* Styling voor de links in de navigatiebalk. */
 .site-header .navigatie a {
     padding: 2px 14px;
     color: var(--flora-white);
@@ -83,24 +94,29 @@ body {
     text-decoration: none;
 }
 
+/* Zorgt voor dezelfde kleur bij de scheidingstekens in de navigatie. */
 .site-header .navigatie a::before,
 .site-header .navigatie a::after {
     color: var(--flora-white);
 }
 
+/* Voegt een scheidingsteken voor elke navigatielink toe. */
 .site-header .navigatie a::before {
     content: "| ";
 }
 
+/* Voegt een scheidingsteken na elke navigatielink toe. */
 .site-header .navigatie a::after {
     content: " |";
 }
 
+/* Verandert de navigatiekleur tijdens hover en toetsenbordfocus. */
 .site-header .navigatie a:hover,
 .site-header .navigatie a:focus-visible {
     color: var(--flora-light-green);
 }
 
+/* Opmaak van het hoofdgedeelte op de contactpagina. */
 .contact-main {
     min-height: 824px;
     padding: 48px 6% 68px;
@@ -108,6 +124,7 @@ body {
     border-bottom: 48px solid var(--flora-light-green);
 }
 
+/* Gecentreerde hoofdkop op de contactpagina. */
 .contact-main h1 {
     margin: 0 0 30px;
     text-align: center;
@@ -115,6 +132,7 @@ body {
     font-weight: 400;
 }
 
+/* Twee kolommen voor contacttekst en contactformulier. */
 .contact-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -123,6 +141,7 @@ body {
     margin: 0 auto;
 }
 
+/* Links kolomgedeelte met tekst en contactgegevens. */
 .contact-copy {
     display: flex;
     flex-direction: column;
@@ -131,6 +150,7 @@ body {
     padding: 18px 0;
 }
 
+/* Stijl voor de introductieteksten op de contactpagina. */
 .contact-intro {
     max-width: 700px;
     margin: 0;
@@ -138,11 +158,13 @@ body {
     line-height: 1.22;
 }
 
+/* Verwijdert cursieve tekstweergave uit adressen. */
 .contact-details,
 .footer-details {
     font-style: normal;
 }
 
+/* Zet labels en waarden naast elkaar in de contactgegevens. */
 .contact-details p,
 .footer-details p {
     display: grid;
@@ -153,6 +175,7 @@ body {
     line-height: 1.22;
 }
 
+/* Stapelt formulieronderdelen verticaal en centreert ze. */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -160,6 +183,7 @@ body {
     gap: 30px;
 }
 
+/* Algemene stijl voor tekstvelden en het e-mailadresveld. */
 .contact-form textarea,
 .contact-form input {
     width: 100%;
@@ -171,23 +195,27 @@ body {
     font-size: 20px;
 }
 
+/* Maakt het berichtveld groot genoeg voor langere vragen. */
 .contact-form textarea {
     min-height: 370px;
     padding: 22px;
     resize: vertical;
 }
 
+/* Standaardhoogte en binnenmarge voor het e-mailadresveld. */
 .contact-form input {
     min-height: 66px;
     padding: 16px 20px;
 }
 
+/* Stijl voor tekst die als placeholder in de invoervelden staat. */
 .contact-form textarea::placeholder,
 .contact-form input::placeholder {
     color: #85877f;
     opacity: 1;
 }
 
+/* Vormgeving van de verzendknop. */
 .contact-form button {
     width: 78%;
     min-height: 62px;
@@ -200,11 +228,13 @@ body {
     cursor: pointer;
 }
 
+/* Verandert de knopkleur bij hover of toetsenbordfocus. */
 .contact-form button:hover,
 .contact-form button:focus-visible {
     background: var(--flora-cream);
 }
 
+/* Algemene vormgeving van de voetbalk. */
 .contact-footer {
     min-height: 300px;
     padding: 48px 6%;
@@ -214,6 +244,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Twee kolommen in de footer voor gegevens en openingstijden. */
 .footer-layout {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -223,22 +254,26 @@ body {
     margin: 0 auto;
 }
 
+/* Tekstgedeelte voor de openingstijden. */
 .openingstijden {
     min-width: 360px;
     text-align: center;
 }
 
+/* Koptekst van de openingstijden. */
 .openingstijden h2 {
     margin: 0 0 18px;
     font-size: clamp(28px, 2.7vw, 44px);
     font-weight: 400;
 }
 
+/* Individuele regels met openingstijden. */
 .openingstijden p {
     margin: 3px 0;
     font-size: clamp(18px, 1.6vw, 28px);
 }
 
+/* Verbergt labels visueel, maar houdt ze beschikbaar voor schermlezers. */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -249,80 +284,97 @@ body {
     clip-path: inset(50%);
 }
 
+/* Aanpassingen voor schermen tot 900 pixels breed. */
 @media (max-width: 900px) {
+    /* Kleiner logo op mobiele en smal-tablet-schermen. */
     .logo-link {
         height: 130px;
     }
 
+    /* Beperkt het kleinere logobeeld. */
     .logo-link img {
         width: 180px;
         max-height: 108px;
     }
 
+    /* Compactere navigatietekst op kleine schermen. */
     .site-header .navigatie a {
         padding: 2px 7px;
         font-size: 16px;
     }
 
+    /* Minder verticale ruimte in het hoofdgedeelte op mobiel. */
     .contact-main {
         min-height: 0;
         padding: 36px 7% 48px;
     }
 
+    /* Minder marge onder de hoofdkop op mobiel. */
     .contact-main h1 {
         margin-bottom: 24px;
     }
 
+    /* Zet contactgegevens en formulier onder elkaar op mobiel. */
     .contact-layout {
         grid-template-columns: 1fr;
         gap: 36px;
     }
 
+    /* Verkleint het linkergedeelte op kleine schermen. */
     .contact-copy {
         min-height: 0;
         gap: 32px;
     }
 
+    /* Compactere labels en waarden voor contactgegevens op mobiel. */
     .contact-details p,
     .footer-details p {
         grid-template-columns: 110px minmax(0, 1fr);
         font-size: 17px;
     }
 
+    /* Minder tussenruimte in het mobiele formulier. */
     .contact-form {
         gap: 18px;
     }
 
+    /* Kleinere tekstzone op mobiele schermen. */
     .contact-form textarea {
         min-height: 220px;
     }
 
+    /* Laat de verzendknop over de volledige breedte lopen. */
     .contact-form button {
         width: 100%;
     }
 
+    /* Minder hoogte en padding voor de mobiele footer. */
     .contact-footer {
         min-height: 0;
         padding: 36px 7%;
         border-top-width: 36px;
     }
 
+    /* Zet footeronderdelen onder elkaar op klein scherm. */
     .footer-layout {
         grid-template-columns: 1fr;
         gap: 32px;
     }
 
+    /* Linkt openingstijden naar links op mobiele schermen. */
     .openingstijden {
         min-width: 0;
         text-align: left;
     }
 }
 
+/* Container voor de hoofdafbeelding op de homepagina. */
 .paginafoto {
     position: relative;
     min-height: 410px;
 }
 
+/* Toont de hoofdafbeelding in een vaste hoogte zonder vervorming. */
 .paginafoto .bloemenfoto {
     display: block;
     width: 100%;
@@ -330,6 +382,7 @@ body {
     object-fit: cover;
 }
 
+/* Plaatst de tekst gecentreerd over de hoofdafbeelding. */
 .paginafoto-tekst {
     position: absolute;
     inset: 0;
@@ -340,16 +393,19 @@ body {
     text-align: center;
 }
 
+/* Opmaak van de hoofdkop over de afbeelding. */
 .paginafoto-tekst h1 {
     margin: 0;
     font-size: clamp(32px, 4vw, 52px);
 }
 
+/* Opmaak van de tekst onder de hoofdkop over de afbeelding. */
 .paginafoto-tekst p {
     margin: 12px 0 0;
     font-size: clamp(16px, 2vw, 24px);
 }
 
+/* Tekst onder de hoofdafbeelding zonder achtergrondbalk. */
 .titel {
     margin: 0;
     padding: 12px 20px;
