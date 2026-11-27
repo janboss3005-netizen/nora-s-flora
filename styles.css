@@ -5,19 +5,7 @@ nav a {
 }
 
 body {
-  background-color: #f3efe0;
-.titel {
-    background-color: darkgreen;
-    color: white;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    margin-top: 400px;
-}
-
-
-
-
+  background-color: #e0f3e5;
 }
 
 
@@ -205,7 +193,7 @@ body {
     min-height: 62px;
     border: 0;
     border-radius: 999px;
-    background: var(--flora-light-green); 
+    background: var(--flora-light-green);
     color: #111;
     font: inherit;
     font-size: 25px;
@@ -226,7 +214,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.footer-layout { 
+.footer-layout {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
@@ -329,3 +317,46 @@ body {
         text-align: left;
     }
 }
+
+.paginafoto {
+    position: relative;
+    min-height: 410px;
+}
+
+.paginafoto .bloemenfoto {
+    display: block;
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+}
+
+.paginafoto-tekst {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--flora-white);
+    text-align: center;
+}
+
+.paginafoto-tekst h1 {
+    margin: 0;
+    font-size: clamp(32px, 4vw, 52px);
+}
+
+.paginafoto-tekst p {
+    margin: 12px 0 0;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+.titel {
+    margin: 0;
+    padding: 12px 20px;
+    background: var(--flora-dark-green);
+    color: var(--flora-white);
+    text-align: center;
+    font-size: clamp(22px, 2.2vw, 34px);
+    font-weight: 400;
+}
+
